@@ -19,21 +19,22 @@ const Inputbox = () => {
     
   return (
     <div>
+        <h1>To-Do List</h1>
         <form onSubmit={handleSubmit}>
             <input type='text' onChange={(e)=>setTodo(e.target.value)} value={todo}>
             </input>
             <button type='submit'>Add Todo</button>
         </form>
-        {
-            todoList.map((item,index)=>(
-            <ul>
+        <ul>
+        {todoList.map((item,index)=>(
+            <div>
                     <li key={index}>
-                        {item}
+                        <p>{item}</p>
                         <button onClick={()=>handelDelete(index)}>Delete</button>
                     </li>
-                </ul>
-            ))
-        }
+                    </div>
+            ))}
+        </ul>
     </div>
   )
 }
