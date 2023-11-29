@@ -1,6 +1,6 @@
 
 import React from "react";
-import Inputbox from "./Inputbox";
+import Inputbox from "./InputBox";
 import './../styles/App.css';
 
 const App = () => {

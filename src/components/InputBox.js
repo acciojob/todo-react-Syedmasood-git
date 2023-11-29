@@ -30,7 +30,7 @@ const Inputbox = () => {
             <div>
                     <li key={index}>
                         <p>{item}</p>
-                        <button onClick={()=>handelDelete(index)}>Delete</button>
+                        <button onClick={()=>handelDelete(index)}></button>
                     </li>
                     </div>
             ))}
