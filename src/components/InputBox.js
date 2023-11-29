@@ -24,16 +24,16 @@ const Inputbox = () => {
             </input>
             <button type='submit'>Add Todo</button>
         </form>
-            <ul>
         {
             todoList.map((item,index)=>(
+            <ul>
                     <li key={index}>
                         {item}
                         <button onClick={()=>handelDelete(index)}>Delete</button>
                     </li>
+                </ul>
             ))
         }
-                </ul>
     </div>
   )
 }
